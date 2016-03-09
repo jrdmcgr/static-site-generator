@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+{% block content %}
+<article>
+	<header>
+		<time datetime="{{ page.meta.date }}"><span>{{ page.meta.date }}</span></time>
+		<h2>{{ page.meta.title }}</h2>
+	</header>
+	{{ page.html }}
+</article>	
+{% endblock %}
+

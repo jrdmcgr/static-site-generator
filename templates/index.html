@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+{% block content %}
+	<dl class="posts-list">
+	{% for page in pages %}
+		<dt>{{ page.meta.date }}</dt>
+		<dd><a href="{{ page.meta.slug }}.html">{{ page.meta.title }}</a></dd>
+	{% endfor %}
+	</dl>
+{% endblock %}
